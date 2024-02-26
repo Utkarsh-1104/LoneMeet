@@ -14,11 +14,10 @@ const Meet = () => {
             })
         });
         const order = await response.json();
-        console.log(order);
 
         var options = {
             "key": process.env.RAZORPAY_KEY_ID,
-            "amount": "50000", 
+            "amount": "5900", 
             "currency": "INR",
             "name": "Lone Meet",
             "description": "Test Transaction",
@@ -57,10 +56,10 @@ const Meet = () => {
   return (
     <>
         <div className='card'>
-            <h1>Book a e-meet</h1>
+            <h1>Book an e-meet</h1>
             <p>Book a meeting with me to discuss your project, journey or just random talk.</p>
             <p>Meet duration: 45 mins</p>
-            <button onClick={paymentHandler}>Pay ₹50</button>
+            <button onClick={paymentHandler}>Pay ₹59</button>
         </div>
     </>
   )
